@@ -1,0 +1,8 @@
+1.1 ~ April 27th, 2013
+    - Slight redesign
+    - Sets your current resolution (not diagonal measurement) on load
+    - Removed "Calculate" button in place of automatic calculation
+    - Added presets menu
+
+1.0 ~ April 26th, 2013
+    - Initial Release
