@@ -1,3 +1,12 @@
+1.2 ~ April 28th, 2013
+    - Slight redesign of the Presets menu
+    - Added a few more presets
+    - Made it so that only numbers are allowed in text boxes
+    - Added horizontal and vertical arrows to screen size boxes
+    - Added disclaimer that all measurements are taken in landscape
+    - Moved credits to the left
+    - Code clean up
+
 1.1 ~ April 27th, 2013
     - Slight redesign
     - Sets your current resolution (not diagonal measurement) on load

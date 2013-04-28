@@ -6,48 +6,63 @@ body, .my-koding-app {
 }
 
 .holder {
+    position: relative;
     width: 80%;
     background: #474747;
-    margin: auto auto;
-    padding: 10px;
+    margin: 10px auto;
+    padding: 10px 0 25px 0;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
 }
+
+.holder p{
+    position: absolute;
+    bottom: 2px;
+    right: 5px;
+    font: 300 12px 'Open Sans', Arial;
+    color: #FFF;
+    margin: 0;
+}
+
 label {
     display: inline-block;
     width: 30%;
-    font: 200 16px 'Open Sans', Arial;
+    font: 300 16px 'Open Sans', Arial;
     color: #FFF;
     vertical-align: top;
 }
+
 input {
     width: 30%;
     height: 35px;
     background: #FFF;
     margin: 10px 0;
     padding: 10px;
-    font: 200 16px 'Open Sans', Arial;
+    font: 300 16px 'Open Sans', Arial;
     text-align: center;
     border: none;
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: 0 1px 0 #222, inset 0 1px 3px #777;
 }
+
 .results {
     text-align: center;
 }
+
 h2 {
     font: 200 20px 'Open Sans', Arial;
     color: #FFF;
+    margin: 16px;
 }
-#width, #height, #ppi {
+
+.holder span {
     display: inline-block;
     width: 250px;
     margin: auto auto;
     padding: 20px 0;
-    background: #FF9200;
-    font: 200 50px 'Open Sans', Arial;
+    font: 300 50px 'Open Sans', Arial;
     color: #FFF;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -55,22 +70,15 @@ h2 {
     box-sizing: border-box;
     box-shadow: 0 1px 0 #333, inset 0 1px 0 #ffa833;
 }
-.credit {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font: 200 16px 'Open Sans', Arial;
-    color: #FFF;
-}
-.credit a {
-    color: #FF9200;
-}
+#width{background:#FF9200 url('y.png') no-repeat;}
+#height{background:#FF9200 url('x.png') no-repeat;}
+#ppi{background:#FF9200;}
 
 .presets {
     position: absolute;
-    right: -190px;
+    right: -240px;
     top: 0;
-    width: 200px;
+    width: 250px;
     height: 100%;
     background: #535353;
     padding: 0 15px;
@@ -99,15 +107,33 @@ h2 {
 .presets ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 10px 0;
 }
 
-.presets li {
-    font: 200 16px 'Open Sans', Arial;
+.presets .preset {
+    font: 300 16px 'Open Sans', Arial;
     color: #FFF;
+    padding: 0 0 0 10px;
     cursor: pointer;
 }
 
-.presets li:hover {
+.presets .preset:hover {
     background: #3E3E3E;
+}
+
+.presets ul li:first-child {
+    font: 400 16px 'Open Sans', Arial;
+    color: #FFF;
+    padding: 0;
+}
+
+.credit {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font: 300 16px 'Open Sans', Arial;
+    color: #FFF;
+}
+.credit a {
+    color: #FF9200;
 }
