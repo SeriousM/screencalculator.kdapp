@@ -3,6 +3,7 @@
 class MainView extends JView
   pistachio:->
     """
+    <div class="ppiApp">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script type="text/javascript">$(document).ready(function(){function e(){var e=$("#h_res").val();var t=$("#v_res").val();var n=$("#diag").val();var r=t/e;var i=Math.sqrt(Math.pow(n,2)/(1+Math.pow(r,2)));var s=i*r;$("#height").text(i.toFixed(2)+'"');$("#width").text(s.toFixed(2)+'"');var o=i*s;var u=Math.sqrt(e*t/o);$("#ppi").text(u.toFixed(2))}$("#h_res").val(screen.width);$("#v_res").val(screen.height);$("input").keypress(function(e){if(e.which!=8&&e.which!=0&&(e.which<48||e.which>57)){return false}});$("input").on("keyup",function(){e()});$(".open").on("click",function(){$(".presets").animate({right:0})});$("li.preset").on("click",function(){var t=$(this).data("h");var n=$(this).data("v");var r=$(this).data("diag");$("#h_res").val(t);$("#v_res").val(n);$("#diag").val(r);e();$(".presets").animate({right:-240})})})</script>
     <div class="holder">
         <div class="calculator">
@@ -45,9 +46,10 @@ class MainView extends JView
         </ul>
     </div>
     <div class="credit">Designed and Developed by <a href="http://kasimahmic.koding.com/">Kasim Ahmic</a></div>
+    </div>
     """
   viewAppended: ->
     @setTemplate do @pistachio
 
 appView.addSubView new MainView
-  cssClass: "my-koding-app"
+  cssClass: "ppiapp"

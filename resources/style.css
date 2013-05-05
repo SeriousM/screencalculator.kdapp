@@ -1,11 +1,12 @@
-input:focus{outline:none;}
+.ppiApp input:focus{outline:none;}
 
-body, .my-koding-app {
+.ppiApp {
+	height: 100%;
     overflow: hidden;
     background: #202020;
 }
 
-.holder {
+.ppiApp .holder {
     position: relative;
     width: 80%;
     background: #474747;
@@ -16,7 +17,7 @@ body, .my-koding-app {
     box-shadow: 0 0 10px #000;
 }
 
-.holder p{
+.ppiApp .holder p{
     position: absolute;
     bottom: 2px;
     right: 5px;
@@ -25,7 +26,7 @@ body, .my-koding-app {
     margin: 0;
 }
 
-label {
+.ppiApp label {
     display: inline-block;
     width: 30%;
     font: 300 16px 'Open Sans', Arial;
@@ -33,7 +34,7 @@ label {
     vertical-align: top;
 }
 
-input {
+.ppiApp input {
     width: 30%;
     height: 35px;
     background: #FFF;
@@ -47,17 +48,17 @@ input {
     box-shadow: 0 1px 0 #222, inset 0 1px 3px #777;
 }
 
-.results {
+.ppiApp .results {
     text-align: center;
 }
 
-h2 {
+.ppiApp h2 {
     font: 200 20px 'Open Sans', Arial;
     color: #FFF;
     margin: 16px;
 }
 
-.holder span {
+.ppiApp .holder span {
     display: inline-block;
     width: 250px;
     margin: auto auto;
@@ -70,11 +71,11 @@ h2 {
     box-sizing: border-box;
     box-shadow: 0 1px 0 #333, inset 0 1px 0 #ffa833;
 }
-#width{background:#FF9200 url('y.png') no-repeat;}
-#height{background:#FF9200 url('x.png') no-repeat;}
-#ppi{background:#FF9200;}
+.ppiApp #width{background:#FF9200 url('y.png') no-repeat;}
+.ppiApp #height{background:#FF9200 url('x.png') no-repeat;}
+.ppiApp #ppi{background:#FF9200;}
 
-.presets {
+.ppiApp .presets {
     position: absolute;
     right: -240px;
     top: 0;
@@ -87,7 +88,7 @@ h2 {
     box-shadow: 0 0 5px #000;
 }
 
-.open {
+.ppiApp .open {
     position: absolute;
     top: 0;
     left: 0;
@@ -96,44 +97,44 @@ h2 {
     cursor: pointer;
 }
 
-.open:hover {
+.ppiApp .open:hover {
     background: #5F5F5F;
 }
 
-.presets h2 {
+.ppiApp .presets h2 {
     margin: 10px 0;
 }
 
-.presets ul {
+.ppiApp .presets ul {
     list-style: none;
     margin: 0;
     padding: 0 0 10px 0;
 }
 
-.presets .preset {
+.ppiApp .presets .preset {
     font: 300 16px 'Open Sans', Arial;
     color: #FFF;
     padding: 0 0 0 10px;
     cursor: pointer;
 }
 
-.presets .preset:hover {
+.ppiApp .presets .preset:hover {
     background: #3E3E3E;
 }
 
-.presets ul li:first-child {
+.ppiApp .presets ul li:first-child {
     font: 400 16px 'Open Sans', Arial;
     color: #FFF;
     padding: 0;
 }
 
-.credit {
+.ppiApp .credit {
     position: absolute;
     bottom: 10px;
     left: 10px;
     font: 300 16px 'Open Sans', Arial;
     color: #FFF;
 }
-.credit a {
+.ppiApp .credit a {
     color: #FF9200;
 }

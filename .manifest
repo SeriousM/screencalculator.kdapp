@@ -1,12 +1,12 @@
 {
   "devMode": true,
-  "version": "1.2",
+  "version": "1.2.1",
   "name": "Screen Calculator",
   "identifier": "com.koding.kasimahmic.apps.screencalculator",
   "path": "~/Applications/screencalculator.kdapp",
   "homepage": "kasimahmic.koding.com/screencalculator",
   "author": "Kasim Ahmic",
-  "repository": "git://github.com/TheInfection/Screen-Calculator.git",
+  "repository": "git://github.com/TheInfection/screencalculator.kdapp.git",
   "description": "A simple calculator for screen size and PPI.",
   "category": "web-app",
   "source": {

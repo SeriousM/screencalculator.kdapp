@@ -1,3 +1,7 @@
+1.2.1 ~ May 5th, 2013
+	- Big fix: Running the app would cause Koding's CSS to be affected
+	- Updated the GitHub repository URL
+
 1.2 ~ April 28th, 2013
     - Slight redesign of the Presets menu
     - Added a few more presets
