@@ -1,6 +1,6 @@
 {
   "devMode": true,
-  "version": "1.3",
+  "version": "1.4",
   "name": "Screen Calculator",
   "identifier": "com.koding.kasimahmic.apps.screencalculator",
   "path": "~/Applications/screencalculator.kdapp",

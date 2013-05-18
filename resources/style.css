@@ -3,16 +3,22 @@
 .ppiApp input:focus{outline:none;}
 
 .ppiApp body, .ppiApp {
-    overflow: hidden;
-    height: 100%;
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
     background: #202020;
+    overflow-x: hidden;
+    overflow-y: auto !important;
 }
 
 .ppiApp .holder {
     position: relative;
+    min-width: 250px !important;
     width: 80%;
     background: #474747;
-    margin: 10px auto;
+    margin: 10px auto 5px auto;
     padding: 10px 10px 25px 10px;
     text-align: center;
     border-radius: 10px;
@@ -60,7 +66,7 @@
     margin: 16px;
 }
 
-.ppiApp .holder span {
+.ppiApp .results span {
     display: inline-block;
     min-width: 250px;
     max-width: 100%;
@@ -75,9 +81,32 @@
     box-sizing: border-box;
 	box-shadow: 0 1px 0 #333, inset 0 1px 0 #ffa833;
 }
-.ppiApp #width{background:#FF9200 url('../resources/y.png') no-repeat;}
-.ppiApp #height{background:#FF9200 url('../resources/x.png') no-repeat;}
+.ppiApp #width{background:#FF9200 url('../resources/x.png') no-repeat;}
+.ppiApp #height{background:#FF9200 url('../resources/y.png') no-repeat;}
 .ppiApp #ppi{background:#FF9200;}
+
+.holder a {
+	display: block;
+	font: 200 20px 'Open Sans', Arial;
+    color: #FFF;
+    margin: 15px auto;
+}
+
+.ppiApp .more {
+	display: none;
+	border-top: 1px solid #000;
+}
+
+.ppiApp .more h4 {
+	margin: 20px;
+    font: 200 16px 'Open Sans', Arial;
+    color: #FFF;
+}
+
+.ppiApp .more span {
+	font-weight: bold;
+	color: orange;
+}
 
 .ppiApp .presets {
     position: absolute;
@@ -149,9 +178,7 @@
 }
 
 .ppiApp .credit {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
+	margin: 5px;
     font: 300 16px 'Open Sans', Arial;
     color: #FFF;
 }
