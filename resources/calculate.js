@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>PPI Calculator</title>
-
-<link href="./resources/style.css" rel="stylesheet" type="text/css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet'>
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="./resources/prefixfree.min.js"></script>
-
-<script>
 $(document).ready(function() {
 
     // Sets the default values for the resolution
@@ -60,7 +48,7 @@ $(document).ready(function() {
         $('#area').html(area.toFixed(2) + ' square inches');
         
         // Calculates the amount of pixels there are in the screen
-        var pixels = (x * y).toFixed(2);
+        var pixels = (x / y).toFixed(2);
         
         // Displays the result
         $('#pixels').text(pixels + ' pixels');
@@ -116,18 +104,13 @@ $(document).ready(function() {
 		else
 			$(this).text("Click to see more (useless) info...");
 	});
-
-    // Opens and closes the presets menu
-    $('.open').click(function() {
-        $('.presets').animate({
-            right: 0
-        });
-    });
-    $('.close').click(function() {
-        $('.presets').animate({
-            right: -240
-        });
-    });
+	
+	$('.open').click(function() {
+		$('.presets').fadeIn();
+	});
+	$('.close').click(function() {
+		$('.presets').fadeOut();
+	});
 
     // The preset menu
     $('li.preset').on('click', function() {
@@ -141,66 +124,9 @@ $(document).ready(function() {
         calculate();
 
         // Closes the menu
-        $('.presets').animate({
-            right: -240
-        });
+		$('.presets').fadeOut();
+		
     });
     
     calculate();
 });
-</script>
-</head>
-<body class="ppiApp">
-    <div class="holder">
-        <div class="calculator">
-            <label for="h_res">Horizontal Resolution (px)</label>
-            <label for="v_res">Vertical Resolution (px)</label>
-            <label for="diag">Diagonal Measurement (in)</label>
-            <br>
-            <input type="text" id="h_res" placeholder="0"></input>
-            <input type="text" id="v_res" placeholder="0"></input>
-            <input type="text" id="diag" placeholder="0"></input>
-        </div>
-        <div class="results">
-            <h2>Your screen size is:</h2>
-            <span id="width">0"</span>
-            <span id="height">0"</span>
-            
-            <h2>Your Pixels Per Inch (PPI) is:</h2>
-            <span id="ppi">0</span>
-        </div>
-        <a href="#" return false id="more">Click to see more (useless) info...</a>
-        <div class="more">
-			<h4>Your screen size in centimeters is about <span id="centiWidth">___cm</span> wide by <span id="centiHeight">___cm</span> tall.</h4>
-			<h4>Each inch on your screen is about <span id="lengthX">___px</span> wide by <span id="lengthY">___px</span> tall.</h4>
-			<h4>Your screen has about <span id="area">___ square inches</span> (in.<sup>2</sup>).</h4>
-			<h4>Your screens aspect ratio is <span id="aspectRatio">__:__</span>.</h4>
-			<h4>You have a total of <span id="pixels">___ pixels</span> in your screen.</h4>
-        </div>
-        <p>*All measurements are taken in landscape.</p>
-    </div>
-    <div class="presets">
-        <span class="open"></span>
-        <span class="close"></span>
-        
-        <h2>Presets</h2>
-        <ul>
-            <li>Mobile</li>
-            <li class="preset" data-h="960" data-v="640" data-diag="3.5">iPhone 4</li>
-            <li class="preset" data-h="1136" data-v="640" data-diag="4">iPhone 5</li>
-            <li class="preset" data-h="1920" data-v="1080" data-diag="4.7">HTC One</li>
-            <li class="preset" data-h="1280" data-v="720" data-diag="4.8">Samsung Glaxay S3</li>
-            <li class="preset" data-h="1920" data-v="1080" data-diag="5">Samsung Glaxay S4</li>
-        </ul>
-        <ul>
-            <li>Monitors</li>
-            <li class="preset" data-h="2560" data-v="1440" data-diag="27">iMac</li>
-            <li class="preset" data-h="2880" data-v="1800" data-diag="15">MacBook Pro (Retina Display)</li>
-            <li class="preset" data-h="1440" data-v="900" data-diag="13">MacBook Air</li>
-            <li class="preset" data-h="1024" data-v="768" data-diag="15">Kasim's Monitor</li>
-            <li class="preset" data-h="1920" data-v="1080" data-diag="27">ASUS MX279H</li>
-        </ul>
-    </div>
-    <div class="credit">Designed and Developed by <a href="http://kasimahmic.koding.com/">Kasim Ahmic</a></div>
-</body>
-</html>

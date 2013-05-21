@@ -1,6 +1,6 @@
 {
   "devMode": true,
-  "version": "1.4",
+  "version": "1.4.1",
   "name": "Screen Calculator",
   "identifier": "com.koding.kasimahmic.apps.screencalculator",
   "path": "~/Applications/screencalculator.kdapp",
@@ -13,7 +13,9 @@
     "blocks": {
       "app": {
         "files": [
-          "./index.coffee"
+          "./index.coffee",
+          "./resources/preefixfree.min.js",
+          "./resources/calculate.js"
         ]
       }
     },
