@@ -48,7 +48,7 @@ $(document).ready(function() {
         $('#area').html(area.toFixed(2) + ' square inches');
         
         // Calculates the amount of pixels there are in the screen
-        var pixels = (x / y).toFixed(2);
+        var pixels = (x* y);
         
         // Displays the result
         $('#pixels').text(pixels + ' pixels');
@@ -106,10 +106,10 @@ $(document).ready(function() {
 	});
 	
 	$('.open').click(function() {
-		$('.presets').fadeIn();
+		$('.presets').fadeIn(200);
 	});
 	$('.close').click(function() {
-		$('.presets').fadeOut();
+		$('.presets').fadeOut(200);
 	});
 
     // The preset menu

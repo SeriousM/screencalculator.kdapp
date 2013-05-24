@@ -1,3 +1,8 @@
+1.4.2 ~ May 24th, 2013
+	- Fixed a calculation error for total pixels
+	- Made presets menu fade in and out slightly faster
+	- Updated .manifest file
+
 1.4.1 ~ May 21st, 2013
 	- Removed source.html file in place of adding full calculate.js file
 	- Removed script tags and jQuery code from index.coffee
