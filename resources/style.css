@@ -165,6 +165,7 @@
 .ppiApp .presets ul {
 	display: inline-block;
     list-style: none;
+    vertical-align: top;
     margin: 15px;
     padding: 0;
 }
@@ -172,7 +173,7 @@
 .ppiApp .presets .preset {
     font: 300 16px 'Open Sans', Arial;
     color: #FFF;
-    padding: 0 0 0 10px;
+    padding: 0 10px;
     cursor: pointer;
 }
 

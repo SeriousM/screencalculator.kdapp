@@ -1,3 +1,9 @@
+1.4.3 ~ May 30th, 2013
+	- Fixed bug where the aspect ratio would default to 16:9
+	- Fixed alignment of presets
+	- Added tablets to presets menu
+	- Renamed calculate.js file to script.js
+
 1.4.2 ~ May 24th, 2013
 	- Fixed a calculation error for total pixels
 	- Made presets menu fade in and out slightly faster

@@ -43,12 +43,21 @@ class MainView extends JView
             <li class="preset" data-h="1920" data-v="1080" data-diag="5">Samsung Glaxay S4</li>
         </ul>
         <ul>
+        	<li>Tablets</li>
+        	<li class="preset" data-h="1024" data-v="768" data-diag="9.7">iPad 1 & 2</li>
+        	<li class="preset" data-h="2048" data-v="1536" data-diag="9.7">iPad 3 & 4</li>
+        	<li class="preset" data-h="1024" data-v="768" data-diag="7.9">iPad Mini</li>
+        	<li class="preset" data-h="1024" data-v="600" data-diag="7">Kindle Fire</li>
+        	<li class="preset" data-h="1280" data-v="800" data-diag="10.1">Samsung Galaxy Tab 10.1</li>
+        </ul>
+        <ul>
             <li>Monitors</li>
             <li class="preset" data-h="2560" data-v="1440" data-diag="27">iMac</li>
             <li class="preset" data-h="2880" data-v="1800" data-diag="15">MacBook Pro (Retina Display)</li>
             <li class="preset" data-h="1440" data-v="900" data-diag="13">MacBook Air</li>
-            <li class="preset" data-h="1024" data-v="768" data-diag="15">Kasim's Monitor</li>
             <li class="preset" data-h="1920" data-v="1080" data-diag="27">ASUS MX279H</li>
+            <li class="preset" data-h="2560" data-v="1700" data-diag="12.9">Chromebook Pixel</li>
+            <li class="preset" data-h="1024" data-v="768" data-diag="15">HP f1523h (Kasim's Monitor)</li>
         </ul>
     </div>
     <div class="credit">Designed and Developed by <a href="http://kasimahmic.koding.com/">Kasim Ahmic</a></div>
