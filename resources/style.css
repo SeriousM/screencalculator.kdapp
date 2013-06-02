@@ -19,7 +19,7 @@
     min-width: 250px !important;
     width: 80%;
     background: #474747;
-    margin: 20px auto 5px auto;
+    margin: 20px auto 0 auto;
     padding: 10px 10px 25px 10px;
     text-align: center;
     border-radius: 10px;
@@ -109,6 +109,22 @@
 	color: orange;
 }
 
+.ppiApp .update {
+	width: 80%;
+	background: #474747;
+	margin: -35px auto 15px auto;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.ppiApp .update a {
+	font: 14px 'Open Sans', Arial, Helvetica;
+	color: #fff;
+	text-decoration: none;
+}
+.ppiApp .update a:hover{text-decoration: underline;}
+
 .ppiApp .presets {
 	display: none;
     position: absolute;
@@ -124,39 +140,29 @@
     box-shadow: 0 0 10px #000;
 }
 
-.ppiApp .open {
-    position: absolute;
-    top: 0;
-    left: 0;
+.ppiApp .open, .ppiApp .close {
+	position: absolute;
+	top: 0;
     width: 32px;
     height: 32px;
-    background: url('../resources/open.png') no-repeat;
+    cursor: pointer;
+}
+.ppiApp .open {
+    left: 0;
+    background: #202020 url('../resources/open.png') no-repeat;
     border-right: 1px solid #fff;
     border-bottom: 1px solid #fff;
     border-radius: 0 0 10px 0;
-    cursor: pointer;
 }
-
 .ppiApp .close {
-    position: absolute;
-    top: 0;
     right: 0;
-    width: 32px;
-    height: 32px;
     background: url('../resources/close.png') no-repeat;
     border-left: 1px solid #fff;
     border-bottom: 1px solid #fff;
     border-radius: 0 0 0 10px;
-    cursor: pointer;
 }
-
-.ppiApp .open:hover {
-    background: #5F5F5F url('../resources/open.png') no-repeat;
-}
-
-.ppiApp .close:hover {
-    background: #5F5F5F url('../resources/close.png') no-repeat;
-}
+.ppiApp .open:hover{background: #5F5F5F url('../resources/open.png') no-repeat;}
+.ppiApp .close:hover{background: #5F5F5F url('../resources/close.png') no-repeat;}
 
 .ppiApp .presets h2 {
     margin: 10px 0 0 0;

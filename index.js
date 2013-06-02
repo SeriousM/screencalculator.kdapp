@@ -1,4 +1,4 @@
-// Compiled by Koding Servers at Thu May 30 2013 12:15:12 GMT-0700 (PDT) in server time
+// Compiled by Koding Servers at Sun Jun 02 2013 06:26:45 GMT-0700 (PDT) in server time
 
 (function() {
 
@@ -19,7 +19,7 @@ MainView = (function(_super) {
   }
 
   MainView.prototype.pistachio = function() {
-    return "    <div class=\"ppiApp\">\n    <span class=\"open\"></span>\n    <div class=\"holder\">\n        <div class=\"calculator\">\n            <label for=\"h_res\">Horizontal Resolution (px)</label>\n            <label for=\"v_res\">Vertical Resolution (px)</label>\n            <label for=\"diag\">Diagonal Measurement (in)</label>\n            <br>\n            <input type=\"text\" id=\"h_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"v_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"diag\" placeholder=\"0\"></input>\n        </div>\n        <div class=\"results\">\n            <h2>Your screen size is:</h2>\n            <span id=\"width\">0\"</span>\n            <span id=\"height\">0\"</span>\n            \n            <h2>Your Pixels Per Inch (PPI) is:</h2>\n            <span id=\"ppi\">0</span>\n        </div>\n        <a href=\"#\" return false id=\"more\">Click to see more (useless) info...</a>\n        <div class=\"more\">\n<h4>Your screen size in centimeters is about <span id=\"centiWidth\">___cm</span> wide by <span id=\"centiHeight\">___cm</span> tall.</h4>\n<h4>Each inch on your screen is about <span id=\"lengthX\">___px</span> wide by <span id=\"lengthY\">___px</span> tall.</h4>\n<h4>Your screen has about <span id=\"area\">___ square inches</span> (in.<sup>2</sup>).</h4>\n<h4>Your screens aspect ratio is <span id=\"aspectRatio\">__:__</span>.</h4>\n<h4>You have a total of <span id=\"pixels\">___ pixels</span> in your screen.</h4>\n        </div>\n        <p>*All measurements are taken in landscape.</p>\n    </div>\n    <div class=\"presets\">\n        <span class=\"close\"></span>\n        <h2>Presets</h2>\n        <ul>\n            <li>Mobile</li>\n            <li class=\"preset\" data-h=\"960\" data-v=\"640\" data-diag=\"3.5\">iPhone 4</li>\n            <li class=\"preset\" data-h=\"1136\" data-v=\"640\" data-diag=\"4\">iPhone 5</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-diag=\"4.7\">HTC One</li>\n            <li class=\"preset\" data-h=\"1280\" data-v=\"720\" data-diag=\"4.8\">Samsung Glaxay S3</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-diag=\"5\">Samsung Glaxay S4</li>\n        </ul>\n        <ul>\n        	<li>Tablets</li>\n        	<li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-diag=\"9.7\">iPad 1 & 2</li>\n        	<li class=\"preset\" data-h=\"2048\" data-v=\"1536\" data-diag=\"9.7\">iPad 3 & 4</li>\n        	<li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-diag=\"7.9\">iPad Mini</li>\n        	<li class=\"preset\" data-h=\"1024\" data-v=\"600\" data-diag=\"7\">Kindle Fire</li>\n        	<li class=\"preset\" data-h=\"1280\" data-v=\"800\" data-diag=\"10.1\">Samsung Galaxy Tab 10.1</li>\n        </ul>\n        <ul>\n            <li>Monitors</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1440\" data-diag=\"27\">iMac</li>\n            <li class=\"preset\" data-h=\"2880\" data-v=\"1800\" data-diag=\"15\">MacBook Pro (Retina Display)</li>\n            <li class=\"preset\" data-h=\"1440\" data-v=\"900\" data-diag=\"13\">MacBook Air</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-diag=\"27\">ASUS MX279H</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1700\" data-diag=\"12.9\">Chromebook Pixel</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-diag=\"15\">HP f1523h (Kasim's Monitor)</li>\n        </ul>\n    </div>\n    <div class=\"credit\">Designed and Developed by <a href=\"http://kasimahmic.koding.com/\">Kasim Ahmic</a></div>\n    </div>";
+    return "    <div class=\"ppiApp\">\n    <span class=\"open\"></span>\n    <div class=\"holder\">\n        <div class=\"calculator\">\n            <label for=\"h_res\">Horizontal Resolution (px)</label>\n            <label for=\"v_res\">Vertical Resolution (px)</label>\n            <label for=\"diag\">Diagonal Measurement (in)</label>\n            <br>\n            <input type=\"text\" id=\"h_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"v_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"diag\" placeholder=\"0\"></input>\n        </div>\n        <div class=\"results\">\n            <h2>Your screen size is:</h2>\n            <span id=\"width\">0\"</span>\n            <span id=\"height\">0\"</span>\n            \n            <h2>Your Pixels Per Inch (PPI) is:</h2>\n            <span id=\"ppi\">0</span>\n        </div>\n        <a href=\"#\" return false id=\"more\">Click to see more info...</a>\n        <div class=\"more\">\n		<h4>Your screen size in centimeters is about <span id=\"centiWidth\">___cm</span> wide by <span id=\"centiHeight\">___cm</span> tall.</h4>\n		<h4>Each inch on your screen is about <span id=\"lengthX\">___px</span> wide by <span id=\"lengthY\">___px</span> tall.</h4>\n		<h4>Your screen has about <span id=\"area\">___ square inches</span> (in.<sup>2</sup>).</h4>\n		<h4>Your screens aspect ratio is <span id=\"aspectRatio\">__:__</span>.</h4>\n		<h4>You have a total of <span id=\"pixels\">___ pixels</span> in your screen.</h4>\n        </div>\n        <p>*All measurements are taken in landscape.</p>\n    </div>\n    <div class=\"presets\">\n        <span class=\"close\"></span>\n        <h2>Presets</h2>\n        <ul>\n            <li>Mobile</li>\n            <li class=\"preset\" data-h=\"960\" data-v=\"640\" data-diag=\"3.5\">iPhone 4</li>\n            <li class=\"preset\" data-h=\"1136\" data-v=\"640\" data-diag=\"4\">iPhone 5</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-diag=\"4.7\">HTC One</li>\n            <li class=\"preset\" data-h=\"1280\" data-v=\"720\" data-diag=\"4.8\">Samsung Glaxay S3</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-diag=\"5\">Samsung Glaxay S4</li>\n        </ul>\n        <ul>\n        	<li>Tablets</li>\n        	<li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-diag=\"9.7\">iPad 1 & 2</li>\n        	<li class=\"preset\" data-h=\"2048\" data-v=\"1536\" data-diag=\"9.7\">iPad 3 & 4</li>\n        	<li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-diag=\"7.9\">iPad Mini</li>\n        	<li class=\"preset\" data-h=\"1024\" data-v=\"600\" data-diag=\"7\">Kindle Fire</li>\n        	<li class=\"preset\" data-h=\"1280\" data-v=\"800\" data-diag=\"10.1\">Samsung Galaxy Tab 10.1</li>\n        </ul>\n        <ul>\n            <li>Monitors</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1440\" data-diag=\"27\">iMac</li>\n            <li class=\"preset\" data-h=\"2880\" data-v=\"1800\" data-diag=\"15\">MacBook Pro (Retina Display)</li>\n            <li class=\"preset\" data-h=\"1440\" data-v=\"900\" data-diag=\"13\">MacBook Air</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-diag=\"27\">ASUS MX279H</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1700\" data-diag=\"12.9\">Chromebook Pixel</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-diag=\"15\">HP f1523h (Kasim's Monitor)</li>\n        </ul>\n    </div>\n<div class=\"update\"><a href=\"https://github.com/TheInfection/screencalculator.kdapp\">Update Available!</a></div>\n    <div class=\"credit\">Designed and Developed by <a href=\"http://kasimahmic.koding.com/\">Kasim Ahmic</a></div>\n    </div>";
   };
 
   MainView.prototype.viewAppended = function() {
@@ -144,10 +144,10 @@ $(document).ready(function() {
 		$('.more').stop().slideToggle();
 		
 		// Changes the text of the link
-		if ($(this).text() == "Click to see more (useless) info...")
-			$(this).text("Click to see less (useless) info...");
+		if ($(this).text() == "Click to see more info...")
+			$(this).text("Click to see less info...");
 		else
-			$(this).text("Click to see more (useless) info...");
+			$(this).text("Click to see more info...");
 	});
 	
 	$('.open').click(function() {
@@ -174,6 +174,26 @@ $(document).ready(function() {
     });
     
     calculate();
+    
+    // Update script
+    
+    // Gets the currentVersion file that I, Kasim Ahmic, host which has the latest version written in it
+	KD.getSingleton("kiteController").run("cat /Users/kasimahmic/Sites/kasimahmic.koding.com/website/works/PPI/resources/currentVersion", function(err,res) {
+		
+		// Sets the localVersion and currentVersion variables
+		var localVersion = "1.4.4";
+		var currentVersion = res;
+
+		// Check to see if the currentVersion is greater than your localVersion
+		if (currentVersion > localVersion) {
+			
+			// If so, show the .update DIV
+			$('.update').animate({
+				margin: '0 auto 15px auto'
+			}, 250);
+		}
+	});
+
 });
 
 /* BLOCK ENDS */

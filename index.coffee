@@ -21,7 +21,7 @@ class MainView extends JView
             <h2>Your Pixels Per Inch (PPI) is:</h2>
             <span id="ppi">0</span>
         </div>
-        <a href="#" return false id="more">Click to see more (useless) info...</a>
+        <a href="#" return false id="more">Click to see more info...</a>
         <div class="more">
 			<h4>Your screen size in centimeters is about <span id="centiWidth">___cm</span> wide by <span id="centiHeight">___cm</span> tall.</h4>
 			<h4>Each inch on your screen is about <span id="lengthX">___px</span> wide by <span id="lengthY">___px</span> tall.</h4>
@@ -60,6 +60,7 @@ class MainView extends JView
             <li class="preset" data-h="1024" data-v="768" data-diag="15">HP f1523h (Kasim's Monitor)</li>
         </ul>
     </div>
+	<div class="update"><a href="https://github.com/TheInfection/screencalculator.kdapp">Update Available!</a></div>
     <div class="credit">Designed and Developed by <a href="http://kasimahmic.koding.com/">Kasim Ahmic</a></div>
     </div>
     """

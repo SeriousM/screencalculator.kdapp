@@ -1,3 +1,7 @@
+1.4.4 ~ June 2nd, 2013
+	- Added update notification script
+	- Changed speed of presets manu fading out when you click on a preset
+
 1.4.3 ~ May 30th, 2013
 	- Fixed bug where the aspect ratio would default to 16:9
 	- Fixed alignment of presets
