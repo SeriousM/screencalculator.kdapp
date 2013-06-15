@@ -60,7 +60,6 @@ class MainView extends JView
             <li class="preset" data-h="1024" data-v="768" data-diag="15">HP f1523h (Kasim's Monitor)</li>
         </ul>
     </div>
-	<div class="update"><a href="https://github.com/TheInfection/screencalculator.kdapp">Update Available!</a></div>
     <div class="credit">Designed and Developed by <a href="http://kasimahmic.koding.com/">Kasim Ahmic</a></div>
     </div>
     """

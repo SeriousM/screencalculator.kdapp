@@ -131,24 +131,4 @@ $(document).ready(function() {
     });
     
     calculate();
-    
-    // Update script
-    
-    // Gets the currentVersion file that I'll host which has the latest version written in it
-	KD.getSingleton("kiteController").run("cat /Users/kasimahmic/Sites/kasimahmic.koding.com/website/works/PPI/resources/currentVersion", function(err,res) {
-		
-		// Sets the localVersion and currentVersion variables
-		var localVersion = "1.4.4";
-		var currentVersion = res;
-
-		// Checks to see if the currentVersion is greater than your localVersion
-		if (currentVersion > localVersion) {
-			
-			// If so, show the .update DIV
-			$('.update').animate({
-				margin: '0 auto 15px auto'
-			}, 250);
-		}
-	});
-
 });

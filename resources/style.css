@@ -109,22 +109,6 @@
 	color: orange;
 }
 
-.ppiApp .update {
-	width: 80%;
-	background: #474747;
-	margin: -35px auto 15px auto;
-	text-align: center;
-	border-radius: 0 0 10px 10px;
-    box-shadow: 0 0 10px #000;
-}
-
-.ppiApp .update a {
-	font: 14px 'Open Sans', Arial, Helvetica;
-	color: #fff;
-	text-decoration: none;
-}
-.ppiApp .update a:hover{text-decoration: underline;}
-
 .ppiApp .presets {
 	display: none;
     position: absolute;
