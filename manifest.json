@@ -1,0 +1,33 @@
+{
+  "devMode": true,
+  "version": "1.4.5",
+  "name": "Screen Calculator",
+  "identifier": "com.koding.kasimahmic.apps.screencalculator",
+  "path": "~/Applications/screencalculator.kdapp",
+  "homepage": "http://kasimahmic.kd.io/works/PPI",
+  "author": "Kasim Ahmic",
+  "repository": "git://github.com/TheInfection/screencalculator.kdapp.git",
+  "description": "A simple calculator for various screen calculations including screen size and PPI.",
+  "category": "web-app",
+  "source": {
+    "blocks": {
+      "app": {
+        "files": [
+          "./index.coffee",
+          "./resources/jquery.min.js",
+          "./resources/prefixfree.min.js",
+          "./resources/script.js"
+        ]
+      }
+    },
+    "stylesheets": [
+      "./resources/style.css"
+    ]
+  },
+  "options": {
+    "type": "tab"
+  },
+  "icns": {
+    "128": "./resources/icon.128.png"
+  }
+}
