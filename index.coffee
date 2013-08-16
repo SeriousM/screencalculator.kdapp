@@ -56,11 +56,11 @@ class MainView extends JView
             <li class="preset" data-h="2880" data-v="1800" data-diag="15">MacBook Pro (Retina Display)</li>
             <li class="preset" data-h="1440" data-v="900" data-diag="13">MacBook Air</li>
             <li class="preset" data-h="1920" data-v="1080" data-diag="27">ASUS MX279H</li>
-            <li class="preset" data-h="2560" data-v="1700" data-diag="12.9">Chromebook Pixel</li>
+            <li class="preset" data-h="2560" data-v="1700" data-diag="12.85">Chromebook Pixel</li>
             <li class="preset" data-h="1024" data-v="768" data-diag="15">HP f1523h (Kasim's Monitor)</li>
         </ul>
     </div>
-    <div class="credit">Designed and Developed by <a href="http://kasimahmic.koding.com/">Kasim Ahmic</a></div>
+    <div class="credit">Designed and Developed by <a href="http://kasimahmic.kd.io/">Kasim Ahmic</a></div>
     </div>
     """
   viewAppended: ->

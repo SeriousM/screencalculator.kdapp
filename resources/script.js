@@ -18,8 +18,8 @@ $(document).ready(function() {
         var devHeight = devWidth * ratio;
 
         // Displays the result rounded to two decimal places
-        $('#height').text(devHeight.toFixed(2) + '"');
         $('#width').text(devWidth.toFixed(2) + '"');
+        $('#height').text(devHeight.toFixed(2) + '"');
 
         // Calculates the PPI
         var area = devHeight * devWidth;
@@ -62,6 +62,8 @@ $(document).ready(function() {
 		} else if (aspectRatio == 1.33) {
 			$('#aspectRatio').text('4:3');
 		} else if (aspectRatio == 1.5) {
+			$('#aspectRatio').text('3:2');
+		} else if (aspectRatio == 1.51) {
 			$('#aspectRatio').text('3:2');
 		} else if (aspectRatio == 1.6) {
 			$('#aspectRatio').text('16:10');
@@ -122,7 +124,7 @@ $(document).ready(function() {
         $('#v_res').val( $(this).data('v') );
         $('#diag').val( $(this).data('diag') );
 
-        // Calls the calculate() function
+        // Calls the calculate function
         calculate();
 
         // Closes the menu
@@ -130,5 +132,6 @@ $(document).ready(function() {
 		
     });
     
+    // Runs the calculate function
     calculate();
 });

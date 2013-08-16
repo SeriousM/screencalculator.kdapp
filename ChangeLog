@@ -1,8 +1,14 @@
+1.4.6 ~ August 16th, 2013
+	- Fixed Chromebook Pixel diagonal measurment
+	- Fixed the link to my site
+	- Minor style changes
+	- Some code cleanup
+
 1.4.5 ~ June 21st, 2013
-    - Updated for the new Koding
+	- Updated for the new Koding
 
 1.4.4.1 ~ June 15th, 2013
-    - Removed update script and all association with it
+	- Removed update script and all association with it
 
 1.4.4 ~ June 2nd, 2013
 	- Added update notification script
