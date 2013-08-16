@@ -4,11 +4,11 @@
 .ppiApp input:focus{outline:none;}
 
 .ppiApp body, .ppiApp {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: #202020;
     margin: 0;
     overflow-x: hidden;
@@ -81,37 +81,37 @@
     text-shadow: 0 1px 3px rgba(0,0,0,0.5);
     border-radius: 20px;
     box-sizing: border-box;
-	box-shadow: 0 1px 0 #333, inset 0 1px 0 #ffa833;
+    box-shadow: 0 1px 0 #333, inset 0 1px 0 #ffa833;
 }
 .ppiApp #width{background:#FF9200 url('../resources/x.png') no-repeat;}
 .ppiApp #height{background:#FF9200 url('../resources/y.png') no-repeat;}
 .ppiApp #ppi{background:#FF9200;}
 
 .holder a {
-	display: block;
-	font: 200 20px 'Open Sans', Arial;
+    display: block;
+    font: 200 20px 'Open Sans', Arial;
     color: #FFF;
     margin: 15px auto;
 }
 
 .ppiApp .more {
-	display: none;
-	border-top: 1px solid #000;
+    display: none;
+    border-top: 1px solid #000;
 }
 
 .ppiApp .more h4 {
-	margin: 20px;
+    margin: 20px;
     font: 200 16px 'Open Sans', Arial;
     color: #FFF;
 }
 
 .ppiApp .more span {
-	font-weight: bold;
-	color: orange;
+    font-weight: bold;
+    color: orange;
 }
 
 .ppiApp .presets {
-	display: none;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -126,8 +126,8 @@
 }
 
 .ppiApp .open, .ppiApp .close {
-	position: absolute;
-	top: 0;
+    position: absolute;
+    top: 0;
     width: 32px;
     height: 32px;
     cursor: pointer;
@@ -154,7 +154,7 @@
 }
 
 .ppiApp .presets ul {
-	display: inline-block;
+    display: inline-block;
     list-style: none;
     vertical-align: top;
     margin: 15px;
@@ -179,7 +179,7 @@
 }
 
 .ppiApp .credit {
-	margin: 5px;
+    margin: 5px;
     font: 300 16px 'Open Sans', Arial;
     color: #FFF;
 }
