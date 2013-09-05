@@ -4,20 +4,15 @@
 .ppiApp input:focus{outline:none;}
 
 .ppiApp body, .ppiApp {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: #202020;
     margin: 0;
     overflow-x: hidden;
-    overflow-y: auto !important;
+    overflow-y: auto;
 }
 
 .ppiApp .holder {
     position: relative;
-    min-width: 250px !important;
+    min-width: 250px;
     width: 80%;
     background: #474747;
     margin: 20px auto 0 auto;
@@ -30,11 +25,13 @@
 .ppiApp .holder p {
     position: absolute;
     bottom: 2px;
-    right: 5px;
     font: 300 12px 'Open Sans', Arial;
     color: #FFF;
     margin: 0;
 }
+.ppiApp .holder #notice{right:5px;}
+.ppiApp .holder #selected_preset{left:5px;}
+.ppiApp .holder #selected_preset span{text-decoration:underline;}
 
 .ppiApp label {
     display: inline-block;
@@ -83,8 +80,8 @@
     box-sizing: border-box;
     box-shadow: 0 1px 0 #333, inset 0 1px 0 #ffa833;
 }
-.ppiApp #width{background:#FF9200 url('../resources/x.png') no-repeat;}
-.ppiApp #height{background:#FF9200 url('../resources/y.png') no-repeat;}
+.ppiApp #width{background:#FF9200 url('../resources/x.png') 5px 0 no-repeat;}
+.ppiApp #height{background:#FF9200 url('../resources/y.png') 0 2px no-repeat;}
 .ppiApp #ppi{background:#FF9200;}
 
 .holder a {
@@ -131,6 +128,7 @@
     width: 32px;
     height: 32px;
     cursor: pointer;
+    transition: background 200ms;
 }
 .ppiApp .open {
     left: 0;
@@ -146,8 +144,8 @@
     border-bottom: 1px solid #aaa;
     border-radius: 0 0 0 10px;
 }
-.ppiApp .open:hover{background: #5F5F5F url('../resources/open.png') no-repeat;}
-.ppiApp .close:hover{background: #5F5F5F url('../resources/close.png') no-repeat;}
+.ppiApp .open:hover{background-color:#5F5F5F;}
+.ppiApp .close:hover{background-color:#5F5F5F;}
 
 .ppiApp .presets h2 {
     margin: 10px 0 0 0;
@@ -166,11 +164,9 @@
     color: #FFF;
     padding: 0 10px;
     cursor: pointer;
+    transition: background 200ms;
 }
-
-.ppiApp .presets .preset:hover {
-    background: #3E3E3E;
-}
+.ppiApp .presets .preset:hover{background:#3E3E3E;}
 
 .ppiApp .presets ul li:first-child {
     font: 400 16px 'Open Sans', Arial;

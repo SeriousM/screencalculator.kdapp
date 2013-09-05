@@ -1,4 +1,4 @@
-/* Compiled by kdc on Fri Aug 16 2013 16:14:40 GMT+0000 (UTC) */
+/* Compiled by kdc on Thu Sep 05 2013 20:11:36 GMT+0000 (UTC) */
 (function() {
 /* KDAPP STARTS */
 /* BLOCK STARTS: /home/kasimahmic/Applications/screencalculator.kdapp/index.coffee */
@@ -15,7 +15,7 @@ MainView = (function(_super) {
   }
 
   MainView.prototype.pistachio = function() {
-    return "    <div class=\"ppiApp\">\n    <span class=\"open\"></span>\n    <div class=\"holder\">\n        <div class=\"calculator\">\n            <label for=\"h_res\">Horizontal Resolution (px)</label>\n            <label for=\"v_res\">Vertical Resolution (px)</label>\n            <label for=\"diag\">Diagonal Measurement (in)</label>\n            <br>\n            <input type=\"text\" id=\"h_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"v_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"diag\" placeholder=\"0\"></input>\n        </div>\n        <div class=\"results\">\n            <h2>Your screen size is:</h2>\n            <span id=\"width\">0\"</span>\n            <span id=\"height\">0\"</span>\n            \n            <h2>Your Pixels Per Inch (PPI) is:</h2>\n            <span id=\"ppi\">0</span>\n        </div>\n        <a href=\"#\" return false id=\"more\">Click to see more info...</a>\n        <div class=\"more\">\n<h4>Your screen size in centimeters is about <span id=\"centiWidth\">___cm</span> wide by <span id=\"centiHeight\">___cm</span> tall.</h4>\n<h4>Each inch on your screen is about <span id=\"lengthX\">___px</span> wide by <span id=\"lengthY\">___px</span> tall.</h4>\n<h4>Your screen has about <span id=\"area\">___ square inches</span> (in.<sup>2</sup>).</h4>\n<h4>Your screens aspect ratio is <span id=\"aspectRatio\">__:__</span>.</h4>\n<h4>You have a total of <span id=\"pixels\">___ pixels</span> in your screen.</h4>\n        </div>\n        <p>*All measurements are taken in landscape.</p>\n    </div>\n    <div class=\"presets\">\n        <span class=\"close\"></span>\n        <h2>Presets</h2>\n        <ul>\n            <li>Mobile</li>\n            <li class=\"preset\" data-h=\"960\" data-v=\"640\" data-diag=\"3.5\">iPhone 4</li>\n            <li class=\"preset\" data-h=\"1136\" data-v=\"640\" data-diag=\"4\">iPhone 5</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-diag=\"4.7\">HTC One</li>\n            <li class=\"preset\" data-h=\"1280\" data-v=\"720\" data-diag=\"4.8\">Samsung Glaxay S3</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-diag=\"5\">Samsung Glaxay S4</li>\n        </ul>\n        <ul>\n        	<li>Tablets</li>\n        	<li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-diag=\"9.7\">iPad 1 & 2</li>\n        	<li class=\"preset\" data-h=\"2048\" data-v=\"1536\" data-diag=\"9.7\">iPad 3 & 4</li>\n        	<li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-diag=\"7.9\">iPad Mini</li>\n        	<li class=\"preset\" data-h=\"1024\" data-v=\"600\" data-diag=\"7\">Kindle Fire</li>\n        	<li class=\"preset\" data-h=\"1280\" data-v=\"800\" data-diag=\"10.1\">Samsung Galaxy Tab 10.1</li>\n        </ul>\n        <ul>\n            <li>Monitors</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1440\" data-diag=\"27\">iMac</li>\n            <li class=\"preset\" data-h=\"2880\" data-v=\"1800\" data-diag=\"15\">MacBook Pro (Retina Display)</li>\n            <li class=\"preset\" data-h=\"1440\" data-v=\"900\" data-diag=\"13\">MacBook Air</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-diag=\"27\">ASUS MX279H</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1700\" data-diag=\"12.85\">Chromebook Pixel</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-diag=\"15\">HP f1523h (Kasim's Monitor)</li>\n        </ul>\n    </div>\n    <div class=\"credit\">Designed and Developed by <a href=\"http://kasimahmic.kd.io/\">Kasim Ahmic</a></div>\n    </div>";
+    return "<div class=\"ppiApp\">\n    <span class=\"open\"></span>\n    <div class=\"holder\">\n        <div class=\"calculator\">\n            <label for=\"h_res\">Horizontal Resolution (px)</label>\n            <label for=\"v_res\">Vertical Resolution (px)</label>\n            <label for=\"diag\">Diagonal Measurement (in)</label>\n            <br>\n            <input type=\"text\" id=\"h_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"v_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"diag\" placeholder=\"0\"></input>\n        </div>\n        <div class=\"results\">\n            <h2>Your screen size is:</h2>\n            <span id=\"width\">0\"</span>\n            <span id=\"height\">0\"</span>\n            <h2>Your Pixels Per Inch (PPI) is:</h2>\n            <span id=\"ppi\">0</span>\n        </div>\n        <a href=\"#\" return false id=\"more\">Click to see more info...</a>\n        <div class=\"more\">\n            <h4>Your screen size in centimeters is about <span id=\"centiWidth\">___cm</span> wide by <span id=\"centiHeight\">___cm</span> tall.</h4>\n            <h4>Each inch on your screen is about <span id=\"lengthX\">___px</span> wide by <span id=\"lengthY\">___px</span> tall.</h4>\n            <h4>Your screen has about <span id=\"area\">___ square inches</span> (in.<sup>2</sup>).</h4>\n            <h4>Your screens aspect ratio is <span id=\"aspectRatio\">__:__</span>.</h4>\n            <h4>You have a total of <span id=\"pixels\">___ pixels</span> in your screen.</h4>\n        </div>\n        <p id=\"notice\">*All measurements are taken in landscape.</p>\n        <p id=\"selected_preset\">Currently Selected Preset: <span>None</span></p>\n    </div>\n    <div class=\"presets\">\n        <span class=\"close\"></span>\n        <h2>Presets</h2>\n        <ul>\n            <li>Mobile</li>\n            <li class=\"preset\" data-h=\"960\" data-v=\"640\" data-d=\"3.5\">iPhone 4</li>\n            <li class=\"preset\" data-h=\"1136\" data-v=\"640\" data-d=\"4\">iPhone 5</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-d=\"4.7\">HTC One</li>\n            <li class=\"preset\" data-h=\"1280\" data-v=\"720\" data-d=\"4.8\">Samsung Glaxay S3</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-d=\"5\">Samsung Glaxay S4</li>\n        </ul>\n        <ul>\n            <li>Tablets</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-d=\"9.7\">iPad 1 & 2</li>\n            <li class=\"preset\" data-h=\"2048\" data-v=\"1536\" data-d=\"9.7\">iPad 3 & 4</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-d=\"7.9\">iPad Mini</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"600\" data-d=\"7\">Kindle Fire</li>\n            <li class=\"preset\" data-h=\"1280\" data-v=\"800\" data-d=\"10.1\">Samsung Galaxy Tab 10.1</li>\n        </ul>\n        <ul>\n            <li>Monitors</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1440\" data-d=\"27\">iMac</li>\n            <li class=\"preset\" data-h=\"2880\" data-v=\"1800\" data-d=\"15\">MacBook Pro (Retina Display)</li>\n            <li class=\"preset\" data-h=\"1440\" data-v=\"900\" data-d=\"13\">MacBook Air</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-d=\"27\">ASUS MX279H</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1700\" data-d=\"12.85\">Chromebook Pixel</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-d=\"15\">HP f1523h (Kasim's Monitor)</li>\n        </ul>\n    </div>\n    <div class=\"credit\">Designed and Developed by <a href=\"http://kasimahmic.kd.io/\">Kasim Ahmic</a></div>\n</div>";
   };
 
   MainView.prototype.viewAppended = function() {
@@ -27,7 +27,7 @@ MainView = (function(_super) {
 })(JView);
 
 appView.addSubView(new MainView({
-  cssClass: "ppiapp"
+  cssClass: "ppiApp"
 }));
 /* BLOCK STARTS: /home/kasimahmic/Applications/screencalculator.kdapp/resources/jquery.min.js */
 /*! jQuery v1.10.1 | (c) 2005, 2013 jQuery Foundation, Inc. | jquery.org/license
@@ -43,14 +43,12 @@ u[o]&&(delete u[o],c?delete n[l]:typeof n.removeAttribute!==i?n.removeAttribute(
  * MIT license
  */(function(){function t(e,t){return[].slice.call((t||document).querySelectorAll(e))}if(!window.addEventListener)return;var e=window.StyleFix={link:function(t){try{if(t.rel!=="stylesheet"||t.hasAttribute("data-noprefix"))return}catch(n){return}var r=t.href||t.getAttribute("data-href"),i=r.replace(/[^\/]+$/,""),s=(/^[a-z]{3,10}:/.exec(i)||[""])[0],o=(/^[a-z]{3,10}:\/\/[^\/]+/.exec(i)||[""])[0],u=/^([^?]*)\??/.exec(r)[1],a=t.parentNode,f=new XMLHttpRequest,l;f.onreadystatechange=function(){f.readyState===4&&l()};l=function(){var n=f.responseText;if(n&&t.parentNode&&(!f.status||f.status<400||f.status>600)){n=e.fix(n,!0,t);if(i){n=n.replace(/url\(\s*?((?:"|')?)(.+?)\1\s*?\)/gi,function(e,t,n){return/^([a-z]{3,10}:|#)/i.test(n)?e:/^\/\//.test(n)?'url("'+s+n+'")':/^\//.test(n)?'url("'+o+n+'")':/^\?/.test(n)?'url("'+u+n+'")':'url("'+i+n+'")'});var r=i.replace(/([\\\^\$*+[\]?{}.=!:(|)])/g,"\\$1");n=n.replace(RegExp("\\b(behavior:\\s*?url\\('?\"?)"+r,"gi"),"$1")}var l=document.createElement("style");l.textContent=n;l.media=t.media;l.disabled=t.disabled;l.setAttribute("data-href",t.getAttribute("href"));a.insertBefore(l,t);a.removeChild(t);l.media=t.media}};try{f.open("GET",r);f.send(null)}catch(n){if(typeof XDomainRequest!="undefined"){f=new XDomainRequest;f.onerror=f.onprogress=function(){};f.onload=l;f.open("GET",r);f.send(null)}}t.setAttribute("data-inprogress","")},styleElement:function(t){if(t.hasAttribute("data-noprefix"))return;var n=t.disabled;t.textContent=e.fix(t.textContent,!0,t);t.disabled=n},styleAttribute:function(t){var n=t.getAttribute("style");n=e.fix(n,!1,t);t.setAttribute("style",n)},process:function(){t('link[rel="stylesheet"]:not([data-inprogress])').forEach(StyleFix.link);t("style").forEach(StyleFix.styleElement);t("[style]").forEach(StyleFix.styleAttribute)},register:function(t,n){(e.fixers=e.fixers||[]).splice(n===undefined?e.fixers.length:n,0,t)},fix:function(t,n,r){for(var i=0;i<e.fixers.length;i++)t=e.fixers[i](t,n,r)||t;return t},camelCase:function(e){return e.replace(/-([a-z])/g,function(e,t){return t.toUpperCase()}).replace("-","")},deCamelCase:function(e){return e.replace(/[A-Z]/g,function(e){return"-"+e.toLowerCase()})}};(function(){setTimeout(function(){t('link[rel="stylesheet"]').forEach(StyleFix.link)},10);document.addEventListener("DOMContentLoaded",StyleFix.process,!1)})()})();(function(e){function t(e,t,r,i,s){e=n[e];if(e.length){var o=RegExp(t+"("+e.join("|")+")"+r,"gi");s=s.replace(o,i)}return s}if(!window.StyleFix||!window.getComputedStyle)return;var n=window.PrefixFree={prefixCSS:function(e,r,i){var s=n.prefix;n.functions.indexOf("linear-gradient")>-1&&(e=e.replace(/(\s|:|,)(repeating-)?linear-gradient\(\s*(-?\d*\.?\d*)deg/ig,function(e,t,n,r){return t+(n||"")+"linear-gradient("+(90-r)+"deg"}));e=t("functions","(\\s|:|,)","\\s*\\(","$1"+s+"$2(",e);e=t("keywords","(\\s|:)","(\\s|;|\\}|$)","$1"+s+"$2$3",e);e=t("properties","(^|\\{|\\s|;)","\\s*:","$1"+s+"$2:",e);if(n.properties.length){var o=RegExp("\\b("+n.properties.join("|")+")(?!:)","gi");e=t("valueProperties","\\b",":(.+?);",function(e){return e.replace(o,s+"$1")},e)}if(r){e=t("selectors","","\\b",n.prefixSelector,e);e=t("atrules","@","\\b","@"+s+"$1",e)}e=e.replace(RegExp("-"+s,"g"),"-");e=e.replace(/-\*-(?=[a-z]+)/gi,n.prefix);return e},property:function(e){return(n.properties.indexOf(e)?n.prefix:"")+e},value:function(e,r){e=t("functions","(^|\\s|,)","\\s*\\(","$1"+n.prefix+"$2(",e);e=t("keywords","(^|\\s)","(\\s|$)","$1"+n.prefix+"$2$3",e);return e},prefixSelector:function(e){return e.replace(/^:{1,2}/,function(e){return e+n.prefix})},prefixProperty:function(e,t){var r=n.prefix+e;return t?StyleFix.camelCase(r):r}};(function(){var e={},t=[],r={},i=getComputedStyle(document.documentElement,null),s=document.createElement("div").style,o=function(n){if(n.charAt(0)==="-"){t.push(n);var r=n.split("-"),i=r[1];e[i]=++e[i]||1;while(r.length>3){r.pop();var s=r.join("-");u(s)&&t.indexOf(s)===-1&&t.push(s)}}},u=function(e){return StyleFix.camelCase(e)in s};if(i.length>0)for(var a=0;a<i.length;a++)o(i[a]);else for(var f in i)o(StyleFix.deCamelCase(f));var l={uses:0};for(var c in e){var h=e[c];l.uses<h&&(l={prefix:c,uses:h})}n.prefix="-"+l.prefix+"-";n.Prefix=StyleFix.camelCase(n.prefix);n.properties=[];for(var a=0;a<t.length;a++){var f=t[a];if(f.indexOf(n.prefix)===0){var p=f.slice(n.prefix.length);u(p)||n.properties.push(p)}}n.Prefix=="Ms"&&!("transform"in s)&&!("MsTransform"in s)&&"msTransform"in s&&n.properties.push("transform","transform-origin");n.properties.sort()})();(function(){function i(e,t){r[t]="";r[t]=e;return!!r[t]}var e={"linear-gradient":{property:"backgroundImage",params:"red, teal"},calc:{property:"width",params:"1px + 5%"},element:{property:"backgroundImage",params:"#foo"},"cross-fade":{property:"backgroundImage",params:"url(a.png), url(b.png), 50%"}};e["repeating-linear-gradient"]=e["repeating-radial-gradient"]=e["radial-gradient"]=e["linear-gradient"];var t={initial:"color","zoom-in":"cursor","zoom-out":"cursor",box:"display",flexbox:"display","inline-flexbox":"display",flex:"display","inline-flex":"display",grid:"display","inline-grid":"display","min-content":"width"};n.functions=[];n.keywords=[];var r=document.createElement("div").style;for(var s in e){var o=e[s],u=o.property,a=s+"("+o.params+")";!i(a,u)&&i(n.prefix+a,u)&&n.functions.push(s)}for(var f in t){var u=t[f];!i(f,u)&&i(n.prefix+f,u)&&n.keywords.push(f)}})();(function(){function s(e){i.textContent=e+"{}";return!!i.sheet.cssRules.length}var t={":read-only":null,":read-write":null,":any-link":null,"::selection":null},r={keyframes:"name",viewport:null,document:'regexp(".")'};n.selectors=[];n.atrules=[];var i=e.appendChild(document.createElement("style"));for(var o in t){var u=o+(t[o]?"("+t[o]+")":"");!s(u)&&s(n.prefixSelector(u))&&n.selectors.push(o)}for(var a in r){var u=a+" "+(r[a]||"");!s("@"+u)&&s("@"+n.prefix+u)&&n.atrules.push(a)}e.removeChild(i)})();n.valueProperties=["transition","transition-property"];e.className+=" "+n.prefix;StyleFix.register(n.prefixCSS)})(document.documentElement);/* BLOCK STARTS: /home/kasimahmic/Applications/screencalculator.kdapp/resources/script.js */
 $(document).ready(function() {
-
     // Sets the default values for the resolution
     $('#h_res').val(screen.width);
     $('#v_res').val(screen.height);
 
     // The calculator
     function calculate() {
-
         // Detects what you put in the fields
         var x = $('#h_res').val();
         var y = $('#v_res').val();
@@ -58,7 +56,7 @@ $(document).ready(function() {
 
         // Calculates the screen size
         var ratio = y / x;
-        var devWidth = Math.sqrt( Math.pow(d,2) / ( 1 + Math.pow(ratio,2)) );
+        var devWidth = Math.sqrt(Math.pow(d,2) / (1 + Math.pow(ratio,2)));
         var devHeight = devWidth * ratio;
 
         // Displays the result rounded to two decimal places
@@ -99,31 +97,33 @@ $(document).ready(function() {
         
         // Calculates the screens aspect ratio (kinda buggy)
         var aspectRatio = (x / y).toFixed(2);
+        var result;
         
         // Displays the result
-		if (aspectRatio == 1.25) {
-			$('#aspectRatio').text('5:4');
-		} else if (aspectRatio == 1.33) {
-			$('#aspectRatio').text('4:3');
-		} else if (aspectRatio == 1.5) {
-			$('#aspectRatio').text('3:2');
-		} else if (aspectRatio == 1.51) {
-			$('#aspectRatio').text('3:2');
-		} else if (aspectRatio == 1.6) {
-			$('#aspectRatio').text('16:10');
-		} else if (aspectRatio == 1.67) {
-			$('#aspectRatio').text('5:3');
-		} else if (aspectRatio == 1.71) {
-			$('#aspectRatio').text('128:75');
-		} else if (aspectRatio == 1.77) {
-			$('#aspectRatio').text('16:9');
-		} else if (aspectRatio == 1.78) {
-			$('#aspectRatio').text('16:9');
-		} else if (aspectRatio == 2.33) {
-			$('#aspectRatio').text('21:9');
-		} else {
-			$('#aspectRatio').text(aspectRatio);
+        if (aspectRatio == 1.25) {
+            result = '5:4';
+        } else if (aspectRatio == 1.33) {
+            result = '4:3';
+        } else if (aspectRatio == 1.5) {
+            result = '3:2';
+        } else if (aspectRatio == 1.51) {
+            result = '3:2';
+        } else if (aspectRatio == 1.6) {
+            result = '16:10';
+        } else if (aspectRatio == 1.67) {
+            result = '5:3';
+        } else if (aspectRatio == 1.71) {
+            result = '128:75';
+        } else if (aspectRatio == 1.77) {
+            result = '16:9';
+        } else if (aspectRatio == 1.78) {
+            result = '16:9';
+        } else if (aspectRatio == 2.33) {
+            result = '21:9';
+        } else {
+            result = aspectRatio;
         }
+        $('#aspectRatio').text(result);
     }
 
     // Allows only numbers in the resolution input fields
@@ -141,39 +141,41 @@ $(document).ready(function() {
         calculate();
     });
 
-	// More Info section
-	$('#more').click(function() {
-		// Shows and hides the More Info section
-		$('.more').stop().slideToggle();
-		
-		// Changes the text of the link
-		if ($(this).text() == "Click to see more info...")
-			$(this).text("Click to see less info...");
-		else
-			$(this).text("Click to see more info...");
-	});
-	
-	$('.open').click(function() {
-		$('.presets').fadeIn(200);
-	});
-	$('.close').click(function() {
-		$('.presets').fadeOut(200);
-	});
+    // More Info section
+    $('#more').click(function() {
+        // Shows and hides the More Info section
+        $('.more').stop().slideToggle();
+        
+        // Changes the text of the link
+        if ($(this).text() == 'Click to see more info...')
+            $(this).text('Click to see less info...');
+        else
+            $(this).text('Click to see more info...');
+    });
+
+    // Opens and closes the presets menu
+    $('.open').click(function() {
+        $('.presets').fadeIn(200);
+    });
+    $('.close').click(function() {
+        $('.presets').fadeOut(200);
+    });
 
     // The preset menu
     $('li.preset').on('click', function() {
-
         // Adds the data attribute values of the presets to the calculator
-        $('#h_res').val( $(this).data('h') );
-        $('#v_res').val( $(this).data('v') );
-        $('#diag').val( $(this).data('diag') );
+        $('#h_res').val($(this).data('h'));
+        $('#v_res').val($(this).data('v'));
+        $('#diag').val($(this).data('d'));
+
+        // Sets the text of the "Currently Selected Preset" span to that of the selected preset
+        $('#selected_preset span').text($(this).text());
 
         // Calls the calculate function
         calculate();
 
         // Closes the menu
-		$('.presets').fadeOut(200);
-		
+        $('.presets').fadeOut(200);
     });
     
     // Runs the calculate function

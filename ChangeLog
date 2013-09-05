@@ -1,3 +1,10 @@
+1.4.7 ~ Semptember 5th, 2013
+	- Added fading transitions for preset items in preset menu
+	- Added "Currently Selected Preset" caption
+	- Minor icon changes
+	- Minor style changes
+	- Minor code cleanup
+
 1.4.6 ~ August 16th, 2013
 	- Fixed Chromebook Pixel diagonal measurment
 	- Fixed the link to my site
@@ -54,7 +61,7 @@
 	- Added -prefix-free for styling
 
 1.2.1 ~ May 5th, 2013
-	- Big fix: Running the app would cause Koding's CSS to be affected
+	- Bug fix: Running the app would cause Koding's CSS to be affected
 	- Updated the GitHub repository URL
 
 1.2 ~ April 28th, 2013
