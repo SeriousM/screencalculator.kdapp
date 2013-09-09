@@ -1,4 +1,4 @@
-/* Compiled by kdc on Thu Sep 05 2013 20:11:36 GMT+0000 (UTC) */
+/* Compiled by kdc on Fri Sep 06 2013 21:30:12 GMT+0000 (UTC) */
 (function() {
 /* KDAPP STARTS */
 /* BLOCK STARTS: /home/kasimahmic/Applications/screencalculator.kdapp/index.coffee */
@@ -15,7 +15,7 @@ MainView = (function(_super) {
   }
 
   MainView.prototype.pistachio = function() {
-    return "<div class=\"ppiApp\">\n    <span class=\"open\"></span>\n    <div class=\"holder\">\n        <div class=\"calculator\">\n            <label for=\"h_res\">Horizontal Resolution (px)</label>\n            <label for=\"v_res\">Vertical Resolution (px)</label>\n            <label for=\"diag\">Diagonal Measurement (in)</label>\n            <br>\n            <input type=\"text\" id=\"h_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"v_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"diag\" placeholder=\"0\"></input>\n        </div>\n        <div class=\"results\">\n            <h2>Your screen size is:</h2>\n            <span id=\"width\">0\"</span>\n            <span id=\"height\">0\"</span>\n            <h2>Your Pixels Per Inch (PPI) is:</h2>\n            <span id=\"ppi\">0</span>\n        </div>\n        <a href=\"#\" return false id=\"more\">Click to see more info...</a>\n        <div class=\"more\">\n            <h4>Your screen size in centimeters is about <span id=\"centiWidth\">___cm</span> wide by <span id=\"centiHeight\">___cm</span> tall.</h4>\n            <h4>Each inch on your screen is about <span id=\"lengthX\">___px</span> wide by <span id=\"lengthY\">___px</span> tall.</h4>\n            <h4>Your screen has about <span id=\"area\">___ square inches</span> (in.<sup>2</sup>).</h4>\n            <h4>Your screens aspect ratio is <span id=\"aspectRatio\">__:__</span>.</h4>\n            <h4>You have a total of <span id=\"pixels\">___ pixels</span> in your screen.</h4>\n        </div>\n        <p id=\"notice\">*All measurements are taken in landscape.</p>\n        <p id=\"selected_preset\">Currently Selected Preset: <span>None</span></p>\n    </div>\n    <div class=\"presets\">\n        <span class=\"close\"></span>\n        <h2>Presets</h2>\n        <ul>\n            <li>Mobile</li>\n            <li class=\"preset\" data-h=\"960\" data-v=\"640\" data-d=\"3.5\">iPhone 4</li>\n            <li class=\"preset\" data-h=\"1136\" data-v=\"640\" data-d=\"4\">iPhone 5</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-d=\"4.7\">HTC One</li>\n            <li class=\"preset\" data-h=\"1280\" data-v=\"720\" data-d=\"4.8\">Samsung Glaxay S3</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-d=\"5\">Samsung Glaxay S4</li>\n        </ul>\n        <ul>\n            <li>Tablets</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-d=\"9.7\">iPad 1 & 2</li>\n            <li class=\"preset\" data-h=\"2048\" data-v=\"1536\" data-d=\"9.7\">iPad 3 & 4</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-d=\"7.9\">iPad Mini</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"600\" data-d=\"7\">Kindle Fire</li>\n            <li class=\"preset\" data-h=\"1280\" data-v=\"800\" data-d=\"10.1\">Samsung Galaxy Tab 10.1</li>\n        </ul>\n        <ul>\n            <li>Monitors</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1440\" data-d=\"27\">iMac</li>\n            <li class=\"preset\" data-h=\"2880\" data-v=\"1800\" data-d=\"15\">MacBook Pro (Retina Display)</li>\n            <li class=\"preset\" data-h=\"1440\" data-v=\"900\" data-d=\"13\">MacBook Air</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-d=\"27\">ASUS MX279H</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1700\" data-d=\"12.85\">Chromebook Pixel</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-d=\"15\">HP f1523h (Kasim's Monitor)</li>\n        </ul>\n    </div>\n    <div class=\"credit\">Designed and Developed by <a href=\"http://kasimahmic.kd.io/\">Kasim Ahmic</a></div>\n</div>";
+    return "<div class=\"ppiApp\">\n    <span class=\"open\"></span>\n    <div class=\"holder\">\n        <div class=\"calculator\">\n            <label for=\"h_res\">Horizontal Resolution (px)</label>\n            <label for=\"v_res\">Vertical Resolution (px)</label>\n            <label for=\"diag\">Diagonal Measurement (in)</label>\n            <br>\n            <input type=\"text\" id=\"h_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"v_res\" placeholder=\"0\"></input>\n            <input type=\"text\" id=\"diag\" placeholder=\"0\"></input>\n        </div>\n        <div class=\"results\">\n            <h2>Your screen size is:</h2>\n            <span id=\"width\">0\"</span>\n            <span id=\"height\">0\"</span>\n            <h2>Your Pixels Per Inch (PPI) is:</h2>\n            <span id=\"ppi\">0</span>\n        </div>\n        <span id=\"more\">Click to see more info...</span>\n        <div class=\"more\">\n            <h4>Your screen size in centimeters is about <span id=\"centiWidth\">___cm</span> wide by <span id=\"centiHeight\">___cm</span> tall.</h4>\n            <h4>Each inch on your screen is about <span id=\"lengthX\">___px</span> wide by <span id=\"lengthY\">___px</span> tall.</h4>\n            <h4>Your screen has about <span id=\"area\">___ square inches</span> (in.<sup>2</sup>).</h4>\n            <h4>Your screens aspect ratio is <span id=\"aspectRatio\">__:__</span>.</h4>\n            <h4>You have a total of <span id=\"pixels\">___ pixels</span> in your screen.</h4>\n        </div>\n        <p id=\"notice\">*All measurements are taken in landscape.</p>\n        <p id=\"selected_preset\">Currently Selected Preset: <span>None</span></p>\n    </div>\n    <div class=\"presets\">\n        <span class=\"close\"></span>\n        <h2>Presets &bull; <span id=\"reset\">Reset</span></h2>\n        <ul>\n            <li>Mobile</li>\n            <li class=\"preset\" data-h=\"960\" data-v=\"640\" data-d=\"3.5\">iPhone 4</li>\n            <li class=\"preset\" data-h=\"1136\" data-v=\"640\" data-d=\"4\">iPhone 5</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-d=\"4.7\">HTC One</li>\n            <li class=\"preset\" data-h=\"1280\" data-v=\"720\" data-d=\"4.8\">Samsung Glaxay S3</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-d=\"5\">Samsung Glaxay S4</li>\n        </ul>\n        <ul>\n            <li>Tablets</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-d=\"9.7\">iPad 1 & 2</li>\n            <li class=\"preset\" data-h=\"2048\" data-v=\"1536\" data-d=\"9.7\">iPad 3 & 4</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-d=\"7.9\">iPad Mini</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"600\" data-d=\"7\">Kindle Fire</li>\n            <li class=\"preset\" data-h=\"1280\" data-v=\"800\" data-d=\"10.1\">Samsung Galaxy Tab 10.1</li>\n        </ul>\n        <ul>\n            <li>Monitors</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1440\" data-d=\"27\">iMac</li>\n            <li class=\"preset\" data-h=\"2880\" data-v=\"1800\" data-d=\"15\">MacBook Pro (Retina Display)</li>\n            <li class=\"preset\" data-h=\"1440\" data-v=\"900\" data-d=\"13\">MacBook Air</li>\n            <li class=\"preset\" data-h=\"1920\" data-v=\"1080\" data-d=\"27\">ASUS MX279H</li>\n            <li class=\"preset\" data-h=\"2560\" data-v=\"1700\" data-d=\"12.85\">Chromebook Pixel</li>\n            <li class=\"preset\" data-h=\"1024\" data-v=\"768\" data-d=\"15\">HP f1523h (Kasim's Monitor)</li>\n        </ul>\n    </div>\n    <div class=\"credit\">Designed and Developed by <a href=\"http://kasimahmic.kd.io/\">Kasim Ahmic</a></div>\n</div>";
   };
 
   MainView.prototype.viewAppended = function() {
@@ -69,36 +69,37 @@ $(document).ready(function() {
 
         // Displays the result rounded to two decimal places
         $('#ppi').text(ppi.toFixed(2));
-        
+
         // Calculates the width and height of each inch of the device screen in px
         var lengthX = Math.sqrt(ppi);
         var lengthY = Math.sqrt(ppi);
-        
+
         // Displays the result
         $('#lengthX').text(lengthX.toFixed(2) + ' px');
         $('#lengthY').text(lengthY.toFixed(2) + ' px');
-        
+
         // Calculates the screen size in centimeters
         var centiWidth = devWidth * 2.54;
         var centiHeight = devHeight * 2.54;
-        
+
         // Displays the result
         $('#centiWidth').text(centiWidth.toFixed(2) + ' cm');
         $('#centiHeight').text(centiHeight.toFixed(2) + ' cm');
-        
+
         // Displays square inches in the screen (calculated earlier)
         $('#area').html(area.toFixed(2) + ' square inches');
-        
+
         // Calculates the amount of pixels there are in the screen
         var pixels = (x * y);
-        
+
         // Displays the result
         $('#pixels').text(pixels + ' pixels');
-        
-        // Calculates the screens aspect ratio (kinda buggy)
+
+        // Calculates the screens aspect ratio
         var aspectRatio = (x / y).toFixed(2);
+
         var result;
-        
+
         // Displays the result
         if (aspectRatio == 1.25) {
             result = '5:4';
@@ -145,7 +146,7 @@ $(document).ready(function() {
     $('#more').click(function() {
         // Shows and hides the More Info section
         $('.more').stop().slideToggle();
-        
+
         // Changes the text of the link
         if ($(this).text() == 'Click to see more info...')
             $(this).text('Click to see less info...');
@@ -177,7 +178,23 @@ $(document).ready(function() {
         // Closes the menu
         $('.presets').fadeOut(200);
     });
-    
+
+    $('#reset').on('click', function() {
+        // Sets the values for the resolution to the users resolution anbd resets the diagonal measurment
+        $('#h_res').val(screen.width);
+        $('#v_res').val(screen.height);
+        $('#diag').val('');
+
+        // Resets the "Currently Selected Present" span
+        $('#selected_preset span').text('None');
+
+        // Runs the calculate function
+        calculate();
+
+        // Closes the menu
+        $('.presets').fadeOut(200);
+    });
+
     // Runs the calculate function
     calculate();
 });

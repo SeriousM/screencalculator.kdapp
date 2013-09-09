@@ -1,4 +1,8 @@
-1.4.7 ~ Semptember 5th, 2013
+1.4.8 ~ September 9th, 2013
+	- Added a reset button to the presets menu
+	- Minor style changes
+
+1.4.7 ~ September 5th, 2013
 	- Added fading transitions for preset items in preset menu
 	- Added "Currently Selected Preset" caption
 	- Minor icon changes

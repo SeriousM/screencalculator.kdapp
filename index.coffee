@@ -20,7 +20,7 @@ class MainView extends JView
                 <h2>Your Pixels Per Inch (PPI) is:</h2>
                 <span id="ppi">0</span>
             </div>
-            <a href="#" return false id="more">Click to see more info...</a>
+            <span id="more">Click to see more info...</span>
             <div class="more">
                 <h4>Your screen size in centimeters is about <span id="centiWidth">___cm</span> wide by <span id="centiHeight">___cm</span> tall.</h4>
                 <h4>Each inch on your screen is about <span id="lengthX">___px</span> wide by <span id="lengthY">___px</span> tall.</h4>
@@ -33,7 +33,7 @@ class MainView extends JView
         </div>
         <div class="presets">
             <span class="close"></span>
-            <h2>Presets</h2>
+            <h2>Presets &bull; <span id="reset">Reset</span></h2>
             <ul>
                 <li>Mobile</li>
                 <li class="preset" data-h="960" data-v="640" data-d="3.5">iPhone 4</li>

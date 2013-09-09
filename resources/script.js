@@ -25,36 +25,37 @@ $(document).ready(function() {
 
         // Displays the result rounded to two decimal places
         $('#ppi').text(ppi.toFixed(2));
-        
+
         // Calculates the width and height of each inch of the device screen in px
         var lengthX = Math.sqrt(ppi);
         var lengthY = Math.sqrt(ppi);
-        
+
         // Displays the result
         $('#lengthX').text(lengthX.toFixed(2) + ' px');
         $('#lengthY').text(lengthY.toFixed(2) + ' px');
-        
+
         // Calculates the screen size in centimeters
         var centiWidth = devWidth * 2.54;
         var centiHeight = devHeight * 2.54;
-        
+
         // Displays the result
         $('#centiWidth').text(centiWidth.toFixed(2) + ' cm');
         $('#centiHeight').text(centiHeight.toFixed(2) + ' cm');
-        
+
         // Displays square inches in the screen (calculated earlier)
         $('#area').html(area.toFixed(2) + ' square inches');
-        
+
         // Calculates the amount of pixels there are in the screen
         var pixels = (x * y);
-        
+
         // Displays the result
         $('#pixels').text(pixels + ' pixels');
-        
-        // Calculates the screens aspect ratio (kinda buggy)
+
+        // Calculates the screens aspect ratio
         var aspectRatio = (x / y).toFixed(2);
+
         var result;
-        
+
         // Displays the result
         if (aspectRatio == 1.25) {
             result = '5:4';
@@ -101,7 +102,7 @@ $(document).ready(function() {
     $('#more').click(function() {
         // Shows and hides the More Info section
         $('.more').stop().slideToggle();
-        
+
         // Changes the text of the link
         if ($(this).text() == 'Click to see more info...')
             $(this).text('Click to see less info...');
@@ -133,7 +134,23 @@ $(document).ready(function() {
         // Closes the menu
         $('.presets').fadeOut(200);
     });
-    
+
+    $('#reset').on('click', function() {
+        // Sets the values for the resolution to the users resolution anbd resets the diagonal measurment
+        $('#h_res').val(screen.width);
+        $('#v_res').val(screen.height);
+        $('#diag').val('');
+
+        // Resets the "Currently Selected Present" span
+        $('#selected_preset span').text('None');
+
+        // Runs the calculate function
+        calculate();
+
+        // Closes the menu
+        $('.presets').fadeOut(200);
+    });
+
     // Runs the calculate function
     calculate();
 });

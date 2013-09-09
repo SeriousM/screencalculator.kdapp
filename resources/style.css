@@ -84,11 +84,13 @@
 .ppiApp #height{background:#FF9200 url('../resources/y.png') 0 2px no-repeat;}
 .ppiApp #ppi{background:#FF9200;}
 
-.holder a {
+.ppiApp .holder #more {
     display: block;
+    margin: 15px auto;
     font: 200 20px 'Open Sans', Arial;
     color: #FFF;
-    margin: 15px auto;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .ppiApp .more {
@@ -149,6 +151,12 @@
 
 .ppiApp .presets h2 {
     margin: 10px 0 0 0;
+}
+
+.ppiApp .presets h2 #reset {
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .ppiApp .presets ul {
